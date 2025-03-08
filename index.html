@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charm Manager AI Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://unpkg.com/dompurify@3.0.5/dist/purify.min.js"></script>
+    <script type="importmap">
+{
+  "imports": {
+    "ky": "https://cdn.skypack.dev/ky@0.33.3"
+  }
+}
+</script>
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="chat-header">
+            <img src="https://i.pinimg.com/originals/c6/3f/54/c63f5404421b3cc7d8f6c9508c75f397.jpg" alt="Charm Manager Profile Picture">
+            <h1>Charm Manager</h1>
+            <span class="status">Offline</span>
+        </header>
+        <div class="chat-window">
+            <div id="chat-messages" class="chat-messages">
+                <!-- Messages will be appended here -->
+            </div>
+            <div id="typing-indicator" class="typing-indicator">
+                Charm Manager is typing...
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+</body>
+</html>
